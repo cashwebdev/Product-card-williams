@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#home_return {
+  text-decoration: none;
+  color: #002349;
+  font-size: 20px;
+}
+
+#heading {
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 10px;
+  background-color: #002349;
+  color: #957c3d;
+}
+
+/*Container for the entire product grid*/
+.product-grid {
+  display: grid; /*Display as grid*/
+  grid-template-columns: repeat(4, 1fr); /*4 columns each taking equal space*/
+  gap: 20px; /*Space between grid items*/
+  padding: 20px; /*Padding around the grid*/
+}
+
+/*Each product card*/
+.product-card {
+  background-color: white; /*White background for each card*/
+  border-radius: 10px; /*Rounded corners for the card*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  overflow: hidden; /*Ensure content doesn't overflow the card*/
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+/*Product Image*/
+.product-image img {
+  width: 200px; /* Image takes full width of the card */
+  height: 200px; /* Maintain aspect ratio */
+  border-bottom: 1px solid #ddd; /* Border between image and details */
+}
+
+/* Product details (title, description, price, button) */
+.product-details {
+  padding: 15px; /* Padding inside the card */
+  text-align: left; /* Center-align text */
+}
+
+/* Product title */
+.product-title {
+  font-size: 1.2em; /* Slightly larger font for titles */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+/* Product description */
+.product-description {
+  font-size: 0.9em; /* Smaller font for descriptions */
+  color: #555; /* Grey color for description text */
+  margin-bottom: 10px; /* Space below the description */
+}
+
+/* Product price */
+.product-price {
+  font-size: 1.1em; /* Slightly larger font for the price */
+  color: #000; /* Black color for the price */
+  margin-bottom: 15px; /* Space below the price */
+}
+
+/* Add to Cart button */
+.add-to-cart {
+  background-color: #28a745; /* Green background color */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for button */
+.add-to-cart:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Hover effect for the entire product card */
+.product-card:hover {
+  transform: translateY(-5px); /* Slightly lift the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow for emphasis */
+}
+/*Footer Styling*/
+
+footer {
+  color: #957c3d;
+  background-color: #002349;
+  margin: 10px 20px;
+  padding: 20px;
+  text-align: center;
+}
